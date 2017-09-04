@@ -13,12 +13,20 @@
   <script type="text/babel">
     var HelloWorld = React.createClass({
       render: function() {
+        return (
+          <p>Hello, {this.props.greetTarget}!</p>
+        );
       }
     });
 
     ReactDOM.render(
       <div>
-        <p>Hello, world!</p>
+        <HelloWorld greetTarget="Batman"/>
+        <HelloWorld greetTarget="Iron Man"/>
+        <HelloWorld greetTarget="Nicholas Cage"/>
+        <HelloWorld greetTarget="Mega Man"/>
+        <HelloWorld greetTarget="Bono"/>
+        <HelloWorld greetTarget="Catwoman"/>
       </div>,
       document.querySelector("#container")
       )
