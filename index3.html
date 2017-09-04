@@ -18,6 +18,32 @@
 <body>
   <div id="container"></div>
 
+  <script type="text/babel">
+
+      var Letter = React.createClass({
+        render: function() {
+          return (
+            <div>
+              {this.props.children}
+            </div>
+          );
+        }
+      });
+
+    var destination = document.querySelector("#container");
+
+    ReactDOM.render(
+      <div>
+        <Letter>A</Letter>
+        <Letter>E</Letter>
+        <Letter>I</Letter>
+        <Letter>O</Letter>
+        <Letter>U</Letter>
+      </div>,
+      destination
+    );
+
+  </script>
 </body>
 
 </html>
