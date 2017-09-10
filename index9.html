@@ -50,9 +50,9 @@
 
     var TodoList = React.createClass({
       getInitialState: function() {
-        return (
+        return {
           items: []
-        );
+        };
       },
       addItem: function() {
         var itemArray = this.state.items;
